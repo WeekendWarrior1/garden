@@ -1,4 +1,3 @@
-{"x": 0, "y": 21, "text": "-", "color": "", "tags": [], "group": ""}
 {"x": 40, "y": 7, "text": "\u2309", "color": "110", "tags": [], "group": ""}
 {"x": 42, "y": 7, "text": "|", "color": "110", "tags": [], "group": ""}
 {"x": 42, "y": 6, "text": "\u2041", "color": "110", "tags": [], "group": ""}
@@ -96,21 +95,21 @@
 {"x": 36, "y": 15, "text": "\u2051", "color": "140 bold", "tags": [], "group": ""}
 {"x": 36, "y": 16, "text": "\u00b6", "color": "140 bold", "tags": [], "group": ""}
 {"x": 30, "y": 16, "text": "}", "color": "140 bold", "tags": [], "group": ""}
-{"x": 43, "y": 10, "text": "\u0505", "color": "230 bold", "tags": [], "group": ""}
-{"x": 43, "y": 11, "text": "\u303d", "color": "230 bold", "tags": [], "group": ""}
-{"x": 41, "y": 12, "text": "\u04ac", "color": "122 bold", "tags": [], "group": ""}
-{"x": 42, "y": 13, "text": "\u2308", "color": "122 bold", "tags": [], "group": ""}
-{"x": 42, "y": 12, "text": "\u04cb", "color": "122 bold", "tags": [], "group": ""}
-{"x": 44, "y": 12, "text": "\u02e8", "color": "230 bold", "tags": [], "group": ""}
-{"x": 43, "y": 12, "text": "\u049c", "color": "230 bold", "tags": [], "group": ""}
-{"x": 41, "y": 10, "text": "\u2041", "color": "122 bold", "tags": [], "group": ""}
-{"x": 43, "y": 13, "text": "\u04e4", "color": "230 bold", "tags": [], "group": ""}
-{"x": 43, "y": 14, "text": "\"", "color": "230 bold", "tags": [], "group": ""}
-{"x": 41, "y": 11, "text": "\u04f6", "color": "122 bold", "tags": [], "group": ""}
-{"x": 42, "y": 11, "text": "\u0506", "color": "122 bold", "tags": [], "group": ""}
-{"x": 41, "y": 13, "text": "\u02e6", "color": "122 bold", "tags": [], "group": ""}
+{"x": 43, "y": 10, "text": "\u0505", "color": "88 bold", "tags": [], "group": ""}
+{"x": 43, "y": 11, "text": "\u303d", "color": "88 bold", "tags": [], "group": ""}
+{"x": 41, "y": 12, "text": "\u04ac", "color": "21 bold", "tags": [], "group": ""}
+{"x": 42, "y": 13, "text": "\u2308", "color": "21 bold", "tags": [], "group": ""}
+{"x": 42, "y": 12, "text": "\u04cb", "color": "21 bold", "tags": [], "group": ""}
+{"x": 44, "y": 12, "text": "\u02e8", "color": "88 bold", "tags": [], "group": ""}
+{"x": 43, "y": 12, "text": "\u049c", "color": "88 bold", "tags": [], "group": ""}
+{"x": 41, "y": 10, "text": "\u2041", "color": "21 bold", "tags": [], "group": ""}
+{"x": 43, "y": 13, "text": "\u04e4", "color": "88 bold", "tags": [], "group": ""}
+{"x": 43, "y": 14, "text": "\"", "color": "80", "tags": [], "group": ""}
+{"x": 41, "y": 11, "text": "\u04f6", "color": "21 bold", "tags": [], "group": ""}
+{"x": 42, "y": 11, "text": "\u0506", "color": "21 bold", "tags": [], "group": ""}
+{"x": 41, "y": 13, "text": "\u02e6", "color": "21 bold", "tags": [], "group": ""}
 {"x": 41, "y": 14, "text": "\u02be", "color": "122 bold", "tags": [], "group": ""}
-{"x": 42, "y": 10, "text": "\u04bf", "color": "122 bold", "tags": [], "group": ""}
+{"x": 42, "y": 10, "text": "\u04bf", "color": "21 bold", "tags": [], "group": ""}
 {"x": 25, "y": 12, "text": "|", "color": "110", "tags": [], "group": ""}
 {"x": 25, "y": 13, "text": "|", "color": "110", "tags": [], "group": ""}
 {"x": 25, "y": 11, "text": "|", "color": "110", "tags": [], "group": ""}
@@ -298,8 +297,6 @@
 {"x": 19, "y": 15, "text": "\"", "color": "80", "tags": [], "group": ""}
 {"x": 20, "y": 15, "text": "\u0385", "color": "80", "tags": [], "group": ""}
 {"x": 21, "y": 15, "text": "\u00a8", "color": "80", "tags": [], "group": ""}
-{"x": 22, "y": 15, "text": "\u02cb", "color": "80", "tags": [], "group": ""}
-{"x": 23, "y": 15, "text": "\u0374", "color": "80", "tags": [], "group": ""}
 {"x": 25, "y": 14, "text": "\ufe4b", "color": "80", "tags": [], "group": ""}
 {"x": 27, "y": 14, "text": "\u02cb", "color": "80", "tags": [], "group": ""}
 {"x": 26, "y": 13, "text": "\u0375", "color": "80", "tags": [], "group": ""}
@@ -564,11 +561,126 @@
 {"x": 78, "y": 22, "text": "\u00a8", "color": "80", "tags": [], "group": ""}
 {"x": 74, "y": 22, "text": "\u02de", "color": "80", "tags": [], "group": ""}
 {"x": 75, "y": 22, "text": "\u02d1", "color": "80", "tags": [], "group": ""}
-{"x": 41, "y": 16, "text": "\u02ca", "color": "", "tags": [], "group": ""}
-{"x": 42, "y": 16, "text": "\u0384", "color": "", "tags": [], "group": ""}
-{"x": 43, "y": 16, "text": "\u0385", "color": "", "tags": [], "group": ""}
+{"x": 41, "y": 16, "text": "\u02ca", "color": "80", "tags": [], "group": ""}
+{"x": 42, "y": 16, "text": "\u0384", "color": "80", "tags": [], "group": ""}
+{"x": 43, "y": 16, "text": "\u0385", "color": "80", "tags": [], "group": ""}
 {"x": 44, "y": 16, "text": "\u00a8", "color": "80", "tags": [], "group": ""}
 {"x": 45, "y": 16, "text": "\ufe4b", "color": "80", "tags": [], "group": ""}
 {"x": 47, "y": 16, "text": "\u00a8", "color": "80", "tags": [], "group": ""}
-{"x": 48, "y": 16, "text": "\u02dd", "color": "", "tags": [], "group": ""}
+{"x": 48, "y": 16, "text": "\u02dd", "color": "80", "tags": [], "group": ""}
 {"x": 49, "y": 16, "text": "\u203f", "color": "80", "tags": [], "group": ""}
+{"x": 51, "y": 15, "text": "\ufe4b", "color": "80", "tags": [], "group": ""}
+{"x": 53, "y": 15, "text": "\u00a8", "color": "80", "tags": [], "group": ""}
+{"x": 54, "y": 15, "text": "\u02da", "color": "80", "tags": [], "group": ""}
+{"x": 55, "y": 15, "text": "\u02e0", "color": "80", "tags": [], "group": ""}
+{"x": 56, "y": 15, "text": "\u02cb", "color": "80", "tags": [], "group": ""}
+{"x": 57, "y": 15, "text": "\u02d1", "color": "80", "tags": [], "group": ""}
+{"x": 58, "y": 15, "text": "\u037a", "color": "80", "tags": [], "group": ""}
+{"x": 21, "y": 16, "text": "\u0384", "color": "80", "tags": [], "group": ""}
+{"x": 22, "y": 15, "text": ".", "color": "80", "tags": [], "group": ""}
+{"x": 24, "y": 15, "text": "\u3030", "color": "80", "tags": [], "group": ""}
+{"x": 23, "y": 15, "text": "\u02de", "color": "80", "tags": [], "group": ""}
+{"x": 26, "y": 15, "text": "\u02df", "color": "80", "tags": [], "group": ""}
+{"x": 27, "y": 15, "text": "\u02e0", "color": "80", "tags": [], "group": ""}
+{"x": 64, "y": 14, "text": "\ufe4b", "color": "80", "tags": [], "group": ""}
+{"x": 66, "y": 14, "text": "\u02cb", "color": "80", "tags": [], "group": ""}
+{"x": 67, "y": 14, "text": "\u02e0", "color": "80", "tags": [], "group": ""}
+{"x": 68, "y": 14, "text": "\u02d3", "color": "80", "tags": [], "group": ""}
+{"x": 69, "y": 14, "text": ".", "color": "80", "tags": [], "group": ""}
+{"x": 18, "y": 16, "text": "\u02d1", "color": "80", "tags": [], "group": ""}
+{"x": 19, "y": 16, "text": "-", "color": "80", "tags": [], "group": ""}
+{"x": 20, "y": 16, "text": "\u3030", "color": "80", "tags": [], "group": ""}
+{"x": 22, "y": 16, "text": "\u02e0", "color": "80", "tags": [], "group": ""}
+{"x": 24, "y": 16, "text": "\u02ce", "color": "80", "tags": [], "group": ""}
+{"x": 23, "y": 16, "text": "\u037a", "color": "80", "tags": [], "group": ""}
+{"x": 25, "y": 17, "text": "`", "color": "80", "tags": [], "group": ""}
+{"x": 26, "y": 17, "text": "\u02d1", "color": "80", "tags": [], "group": ""}
+{"x": 27, "y": 17, "text": "\u02ce", "color": "80", "tags": [], "group": ""}
+{"x": 1, "y": 17, "text": "\u02cb", "color": "80", "tags": [], "group": ""}
+{"x": 2, "y": 17, "text": "\u02d1", "color": "80", "tags": [], "group": ""}
+{"x": 3, "y": 17, "text": "\u02ce", "color": "80", "tags": [], "group": ""}
+{"x": 4, "y": 18, "text": "`", "color": "80", "tags": [], "group": ""}
+{"x": 5, "y": 18, "text": "\u0375", "color": "80", "tags": [], "group": ""}
+{"x": 4, "y": 19, "text": "\u02d8", "color": "80", "tags": [], "group": ""}
+{"x": 6, "y": 18, "text": ".", "color": "80", "tags": [], "group": ""}
+{"x": 7, "y": 18, "text": "-", "color": "80", "tags": [], "group": ""}
+{"x": 8, "y": 18, "text": "\u02ca", "color": "80", "tags": [], "group": ""}
+{"x": 9, "y": 18, "text": "\u0384", "color": "80", "tags": [], "group": ""}
+{"x": 10, "y": 18, "text": "\u0385", "color": "80", "tags": [], "group": ""}
+{"x": 11, "y": 18, "text": "\u00a8", "color": "80", "tags": [], "group": ""}
+{"x": 14, "y": 17, "text": "\u301c", "color": "80", "tags": [], "group": ""}
+{"x": 12, "y": 17, "text": "\u02cf", "color": "80", "tags": [], "group": ""}
+{"x": 13, "y": 17, "text": "-", "color": "80", "tags": [], "group": ""}
+{"x": 17, "y": 17, "text": "\u02ca", "color": "80", "tags": [], "group": ""}
+{"x": 16, "y": 17, "text": "\u02d1", "color": "80", "tags": [], "group": ""}
+{"x": 18, "y": 17, "text": "\u0385", "color": "80", "tags": [], "group": ""}
+{"x": 19, "y": 17, "text": "\u00a8", "color": "80", "tags": [], "group": ""}
+{"x": 20, "y": 17, "text": "\u02cb", "color": "80", "tags": [], "group": ""}
+{"x": 21, "y": 17, "text": "\u02d1", "color": "80", "tags": [], "group": ""}
+{"x": 22, "y": 17, "text": "\u02ce", "color": "80", "tags": [], "group": ""}
+{"x": 23, "y": 17, "text": "\u203f", "color": "80", "tags": [], "group": ""}
+{"x": 24, "y": 17, "text": "\ufe4f", "color": "80", "tags": [], "group": ""}
+{"x": 27, "y": 18, "text": "\u02cb", "color": "80", "tags": [], "group": ""}
+{"x": 1, "y": 19, "text": "`", "color": "80", "tags": [], "group": ""}
+{"x": 2, "y": 19, "text": "\u02d1", "color": "80", "tags": [], "group": ""}
+{"x": 3, "y": 19, "text": "\u02ce", "color": "80", "tags": [], "group": ""}
+{"x": 4, "y": 20, "text": "\u00a8", "color": "80", "tags": [], "group": ""}
+{"x": 5, "y": 20, "text": "`", "color": "80", "tags": [], "group": ""}
+{"x": 6, "y": 20, "text": "\u02d1", "color": "80", "tags": [], "group": ""}
+{"x": 5, "y": 19, "text": "-", "color": "80", "tags": [], "group": ""}
+{"x": 6, "y": 19, "text": "\u02d1", "color": "80", "tags": [], "group": ""}
+{"x": 7, "y": 19, "text": "-", "color": "80", "tags": [], "group": ""}
+{"x": 8, "y": 19, "text": "\u02ce", "color": "80", "tags": [], "group": ""}
+{"x": 7, "y": 20, "text": "\u02ca", "color": "80", "tags": [], "group": ""}
+{"x": 8, "y": 20, "text": "\u00a8", "color": "80", "tags": [], "group": ""}
+{"x": 9, "y": 19, "text": "\u02cf", "color": "80", "tags": [], "group": ""}
+{"x": 10, "y": 19, "text": "\u02d6", "color": "80", "tags": [], "group": ""}
+{"x": 11, "y": 19, "text": "\u02ca", "color": "80", "tags": [], "group": ""}
+{"x": 12, "y": 19, "text": "\u0385", "color": "80", "tags": [], "group": ""}
+{"x": 13, "y": 19, "text": "\u00a8", "color": "80", "tags": [], "group": ""}
+{"x": 14, "y": 19, "text": "\"", "color": "80", "tags": [], "group": ""}
+{"x": 15, "y": 19, "text": "\u301c", "color": "80", "tags": [], "group": ""}
+{"x": 17, "y": 19, "text": "-", "color": "80", "tags": [], "group": ""}
+{"x": 19, "y": 19, "text": "\u02ca", "color": "80", "tags": [], "group": ""}
+{"x": 18, "y": 19, "text": "\u02d1", "color": "80", "tags": [], "group": ""}
+{"x": 20, "y": 19, "text": "\u0384", "color": "80", "tags": [], "group": ""}
+{"x": 21, "y": 19, "text": "\u0385", "color": "80", "tags": [], "group": ""}
+{"x": 22, "y": 19, "text": "\u00a8", "color": "80", "tags": [], "group": ""}
+{"x": 23, "y": 19, "text": "\ufe4b", "color": "80", "tags": [], "group": ""}
+{"x": 25, "y": 18, "text": "\u02cf", "color": "80", "tags": [], "group": ""}
+{"x": 26, "y": 18, "text": ".", "color": "80", "tags": [], "group": ""}
+{"x": 27, "y": 18, "text": "\u02ce", "color": "80", "tags": [], "group": ""}
+{"x": 28, "y": 19, "text": "\ufe4b", "color": "80", "tags": [], "group": ""}
+{"x": 4, "y": 21, "text": "\u00a8", "color": "80", "tags": [], "group": ""}
+{"x": 5, "y": 21, "text": "\ufe4b", "color": "80", "tags": [], "group": ""}
+{"x": 3, "y": 21, "text": "\u0385", "color": "80", "tags": [], "group": ""}
+{"x": 2, "y": 21, "text": "\u0384", "color": "80", "tags": [], "group": ""}
+{"x": 1, "y": 21, "text": "\u02ca", "color": "80", "tags": [], "group": ""}
+{"x": 9, "y": 20, "text": "\u02cf", "color": "80", "tags": [], "group": ""}
+{"x": 7, "y": 21, "text": "\u00a8", "color": "80", "tags": [], "group": ""}
+{"x": 10, "y": 20, "text": "-", "color": "80", "tags": [], "group": ""}
+{"x": 11, "y": 20, "text": "\u02d1", "color": "80", "tags": [], "group": ""}
+{"x": 12, "y": 20, "text": "\u02ca", "color": "80", "tags": [], "group": ""}
+{"x": 13, "y": 20, "text": "\u301c", "color": "80", "tags": [], "group": ""}
+{"x": 15, "y": 20, "text": "-", "color": "80", "tags": [], "group": ""}
+{"x": 16, "y": 20, "text": "\u02d1", "color": "80", "tags": [], "group": ""}
+{"x": 17, "y": 20, "text": "\u02d2", "color": "80", "tags": [], "group": ""}
+{"x": 18, "y": 20, "text": ".", "color": "80", "tags": [], "group": ""}
+{"x": 19, "y": 20, "text": "\u02ce", "color": "80", "tags": [], "group": ""}
+{"x": 20, "y": 20, "text": "\ufe4f", "color": "80", "tags": [], "group": ""}
+{"x": 22, "y": 20, "text": "\u203f", "color": "80", "tags": [], "group": ""}
+{"x": 23, "y": 21, "text": "\u00a8", "color": "80", "tags": [], "group": ""}
+{"x": 24, "y": 21, "text": "`", "color": "80", "tags": [], "group": ""}
+{"x": 25, "y": 21, "text": "\u02d1", "color": "80", "tags": [], "group": ""}
+{"x": 26, "y": 21, "text": "\u02ce", "color": "80", "tags": [], "group": ""}
+{"x": 27, "y": 21, "text": "\ufe4f", "color": "80", "tags": [], "group": ""}
+{"x": 29, "y": 21, "text": "\u02cf", "color": "80", "tags": [], "group": ""}
+{"x": 30, "y": 21, "text": "\u02d1", "color": "80", "tags": [], "group": ""}
+{"x": 29, "y": 20, "text": "\u02ca", "color": "80", "tags": [], "group": ""}
+{"x": 28, "y": 20, "text": "\u02d1", "color": "80", "tags": [], "group": ""}
+{"x": 27, "y": 20, "text": "\u02cf", "color": "80", "tags": [], "group": ""}
+{"x": 22, "y": 22, "text": "\u02ca", "color": "80", "tags": [], "group": ""}
+{"x": 23, "y": 22, "text": "\u00a8", "color": "80", "tags": [], "group": ""}
+{"x": 24, "y": 22, "text": "\u0385", "color": "80", "tags": [], "group": ""}
+{"x": 21, "y": 22, "text": "\u02d1", "color": "80", "tags": [], "group": ""}
+{"x": 20, "y": 22, "text": "\u02cf", "color": "80", "tags": [], "group": ""}
