@@ -19,9 +19,9 @@ class Sequence:
 			for e in sequence:
 				for i in range(self.base):
 					bus.append((i+e) % self.base)
-			sequence.clear()
+			sequence = []
 			sequence.extend(bus)
-			bus.clear()
+			bus = []
 		return sequence		
 
 	def sum_set(self, key, bus=[]):
@@ -29,7 +29,7 @@ class Sequence:
 			creating balanced sets of integers that are then power summed - 
 			demonstrating the balance and beauty of this particular sequence.
 		"""
-		bus.clear()
+		bus = []
 		for k,e in zip(self.sequence, self.number_set):
 			if k == key:
 				bus.append(e)
