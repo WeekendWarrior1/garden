@@ -81,7 +81,7 @@ def render(w, fy, fx, prism, r):
 			w.addstr(
 					centre(fy, r)+y, 
 					centre(fx, r)+x, 
-					"+", 
+					".", 
 					curses.color_pair(232+(prism[y][x]-32))
 					)
 	w.refresh()
@@ -100,7 +100,7 @@ def prism(w, n, fy, fx):
 		for z, y, x in product(range(n), range(n), range(n)):
 			if prism[y+z][x+z] >> 5 == 0:
 				prism[y+z][x+z] = modulo((t+z+y+x), n) + 32
-		render(w, prism, fy, fx, r)
+		render(w, fy, fx, prism, r)
 		
 		curses.napms(17)
 	
