@@ -75,15 +75,17 @@ def render(w, fy, fx, prism, r):
 	'''
 	w.erase()
 	w.border('|', '|', '-', '-', '.', '.', "'", "'")
-
-	for y, x in product(range(r), range(r)):
-		if prism[y][x] != 0:
-			w.addstr(
-					centre(fy, r)+y, 
-					centre(fx, r)+x, 
-					".", 
-					curses.color_pair(232+(prism[y][x]-32))
-					)
+	try:
+		for y, x in product(range(r), range(r)):
+			if prism[y][x] != 0:
+				w.addstr(
+						centre(fy, r)+y, 
+						centre(fx, r)+x, 
+						".", 
+						curses.color_pair(232+(prism[y][x]-32))
+						)
+	except:
+		pass
 	w.refresh()
 
 	
