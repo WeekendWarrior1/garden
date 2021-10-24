@@ -21,6 +21,8 @@ def curses_main(w):
 		Initilises xterm-x256 colours and frame dimensions, hides cursor and 
 		disables echo, and starts main loop with live resizing.
 		:arg:		w 			curses window object
+		:var:		my, mx		current max x and y dimensions of terminal
+		:var:		n 			base number relative to terminal dimensions
 	'''
 	curses.curs_set(0)
 	curses.noecho()
@@ -29,42 +31,38 @@ def curses_main(w):
 	[curses.init_pair(i, i, -1) for i in range(232, 256)]
 	w.nodelay(True)
 
-	n, fy, fx = resize(w) 
+	n, my, mx = resize(w) 
 
 	while True:	
 		if w.getch() == curses.KEY_RESIZE:
-			n, fy, fx = resize(w)
+			n, my, mx = resize(w)
 
-		prism(w, n, fy, fx)
+		prism(w, n, my, mx, ((n*2)-1))
 
 
 def resize(w):
 	'''
 		Returns current size of terminal and a seed number for Thue-Morse prism.
-		:var:		fy, fx		current x and y dimensions of frame/terminal
-		:var:		n 			base number relative to terminal dimensions
 	'''
-	fy, fx = w.getmaxyx()
-	n = round((min(fy, fx)-1) // 4)
-	return n, fy, fx
+	my, mx = w.getmaxyx()
+	n = round((min(my, mx)-1) // 4)
+	return n, my, mx
 
 
-def prism(w, n, fy, fx):	
+def prism(w, n, my, mx, pd):	
 	'''
 		Generate slices of a 4D Thue-Morse prism and pass to render().
+		:arg:		pd 			dimension of prism array
 		:var:		prism		2D array of colour values
-		:var:		r 			dimension of prism array
 		:var:		timestamp	mark, in nanoseconds, time before processing
 	'''
-	r = (n*2)-1
-
 	for t in range(n):
 		timestamp = time.time_ns()
-		prism = [[0 for __ in range(r)] for __ in range(r)]
+		prism = [[32 for __ in range(pd)] for __ in range(pd)]
 		for z, y, x in product(range(n), range(n), range(n)):
-			if prism[y+z][x+z] >> 5 == 0:
-				prism[y+z][x+z] = modulo((t+z+y+x), n) + 32
-		render(w, fy, fx, prism, r, timestamp)
+			if prism[y+z][x+z] >> 5 == 1:
+				prism[y+z][x+z] = modulo((t+z-y-x), n)
+		render(w, n, my, mx, prism, pd, timestamp)
 
 
 def modulo(a, b):
@@ -79,27 +77,27 @@ def modulo(a, b):
 		return 0	
 
 
-def render(w, fy, fx, prism, r, timestamp):
+def render(w, n, my, mx, prism, pd, timestamp):
 	'''
 		Erases screen and renders the provided prism slice at centre screen.
 	'''
 	w.erase()
 	w.border('|', '|', '-', '-', '.', '.', "'", "'")
 	try:
-		for y, x in product(range(r), range(r)):
-			if prism[y][x] != 0:
+		for y, x in product(range(pd), range(pd)):
+			if prism[y][x] != 32:
 				w.addstr(
-						centre(fy, r)+y, 
-						centre(fx, r)+x, 
+						centre(my, pd)+y, 
+						centre(mx, pd)+x, 
 						".", 
-						curses.color_pair(232+(prism[y][x]-32))
+						curses.color_pair(colour(prism[y][x], n))
 						)
 	except:
-		fy, fx = w.getmaxyx()
-		render(w, fy, fx, prism, r, timestamp)
+		my, mx = w.getmaxyx()
+		render(w, n, my, mx, prism, pd, timestamp)
 
 	w.refresh()
-	curses_sleep(timestamp)
+	curses_sleep(n, timestamp)
 
 
 def centre(a, b):
@@ -109,15 +107,27 @@ def centre(a, b):
 		:arg:		b 			dimension of prism array 
 	'''
 	return (round(a//2) - round(b//2))
+
+
+def colour(i, n, crs=232, cr=24):
+	'''
+		Divides the colour range into approximately n spaced values and 
+		returns prism index plus colour range start value.
+		:arg:		i 			index of prism array
+		:arg:		crs 		xterm256 colour range start value
+		:arg:		cr 			length of colour range
+	'''
+	return (crs + round((i * ((cr / n) * 10)) / 10))
     
 
-def curses_sleep(timestamp):
+def curses_sleep(n, timestamp, fr=24):
 	'''
-		Strive for 60 fps regardless of processing time. 
+		Strive for fr frame rate regardless of processing time. 
 		Initial calculations are all done in nanoseconds.
+		:arg:		fr 			target frame rate in seconds
 		:var:		nap 		determines elapsed time since timestamp in ms
 	'''
-	nap = int(((1000000000 / 60) - (time.time_ns() - timestamp)) // 1000000)
+	nap = int(((1000000000 / fr) - (time.time_ns() - timestamp)) // 1000000)
 	if nap > 0: curses.napms(nap)
 
 
