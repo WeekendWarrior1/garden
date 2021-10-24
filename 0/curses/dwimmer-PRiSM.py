@@ -6,7 +6,7 @@
 
 import curses
 from itertools import product
-
+import time
 
 def main():
 	'''
@@ -14,6 +14,18 @@ def main():
 	'''
 	curses.wrapper(curses_main)
 
+
+def curses_sleep(fps: int, time_started_update: int):
+	'''
+		Strive for target fps regardless of processing time
+		Initial calculations are all done in ns
+	'''
+	now = time.time_ns()
+	time_to_sleep_ns = (1000000000 / fps) - (now - time_started_update)
+	time_to_sleep_ms = int(time_to_sleep_ns // 1000000)
+	# could be negative number if the render code took greater than 17ms
+	if time_to_sleep_ms > 0:
+		curses.napms(time_to_sleep_ms)
 
 def curses_main(w):
 	'''
@@ -69,7 +81,7 @@ def resize(w):
 	return n, fy, fx
 
 
-def render(w, fy, fx, prism, r):
+def render(w, fy, fx, prism, r, time_started_update):
 	'''
 		Erases screen and renders the provided prism slice at centre screen.
 	'''
@@ -85,6 +97,7 @@ def render(w, fy, fx, prism, r):
 					curses.color_pair(232+(prism[y][x]-32))
 					)
 	w.refresh()
+	curses_sleep(60, time_started_update)
 
 	
 def prism(w, n, fy, fx):	
@@ -96,13 +109,12 @@ def prism(w, n, fy, fx):
 	r = (n*2)-1
 
 	for t in range(n):
+		time_started_update = time.time_ns()
 		prism = [[0 for __ in range(r)] for __ in range(r)]
 		for z, y, x in product(range(n), range(n), range(n)):
 			if prism[y+z][x+z] >> 5 == 0:
 				prism[y+z][x+z] = modulo((t+z+y+x), n) + 32
-		render(w, fy, fx, prism, r)
-		
-		curses.napms(17)
+		render(w, fy, fx, prism, r, time_started_update)
 	
 
 main()
